@@ -1,0 +1,51 @@
+Q1. write a python program to print "Hello Python" ?
+
+"Hello Python"
+print("Hello Python")
+
+Q2. write a python program  to do arithmetical operations addition and division?
+
+# addition arithemetical operation
+a = 34
+b = 54
+add = a+b
+add = 34+54
+print(add)
+
+# division arithemetical opreation 
+a = 54
+b = 45
+div = a/b
+div = 54/45
+print(div)
+
+Q3. write a python program to find the area of a triangle?
+Three side of triangel is a, b, andc
+a = float(input("Enter first side:"))
+b = float(input("Enter second side:"))
+c = float(input("Enter third side:"))
+
+# calculate the semi-perimeter
+s = (a+b+c)/2
+
+# calculate the area
+
+are = (s*(s-a)*(s-b)*(s-c)*)**0.5
+print("The area of triangle is:",area)
+
+Q4. write a python program to swap two variable?
+A = int(input("Please enter value for A:")
+S = int(input("Please enter value for S:")
+
+# To swap the values of two variables
+A,S=S,A
+
+print("The value of after swapping:",A)
+print("The value of after swapping:",S)
+
+
+Q5. write a pyhton program to generate a random number?
+
+import random
+n = ramdom.radint(0,40)
+print(n)

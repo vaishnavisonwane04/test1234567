@@ -1,0 +1,164 @@
+Q1.What exactly is[]
+[]is the empty list
+
+[]
+
+Q2.In a list of values stored in a variable called spam,how would you assign the value'hello' as the third value?
+(Assume[2,4,6,8,10]are in spam.)
+
+in order to assign 'hello'at 3rd value.we need to modify the value at index 2 of spam list
+
+[] spam = [2,4,6,8,10]
+print(spam)
+spam[2] = 'hello'
+print(spam)
+
+[2,4,6,8,10]
+[2,4,'hello',8,10]
+[]
+Let's pretend the spam includes the list['a','b','c','d']for the next three queries.
+
+[] spam = ['a','b','c','d']
+
+
+Q3.what is the value of spam[int(int('3'*2)/11]?
+
+. '3'**2 will give'33'
+.int('33') will be 33
+.33/11 will be 3.0
+.int(3.0)will give 3
+.spam[3]will be value at index 3 that is'd'
+
+[] spam[int(int('3'*2)/11]
+'d'
+[]
+
+
+Q4.What is the value of spam-[1]
+.spam[-1]=last value of list that is 'd'
+
+[] spam[-1]
+   'd'
+   
+   []
+   
+   
+Q5. What is the of spam[:2]?
+.spam[:2]='a' and 'b'
+spam[:2]
+['a','b']
+
+[]
+
+Let pretend becon has the list [3.14,'cat',11,'cat',True]for the next three questions.
+
+[] bacon = [3.14, 'cat',11,'cat',True]
+
+
+
+Q6. What is the value of bacon.index('cat')?
+
+.It will output the index of first occurence of 'cat' value
+.ans: 1
+
+[] bacon.index('cat')
+     1
+ 
+ 
+ 
+ Q7 How does bacon.append(99)change the look of the list in bacon?
+  .It will append 99 at the end of list bacon
+  .[3.14,'cat',True,99]
+  
+  [] bacon.append(99)
+  print(bacon)
+  [3.14,'cat',11,'cat',true,99]
+  
+  
+  Q8.How does bacon.remove('cat')change the look of the list in bacon?
+  .It will remove the first occurence of the 'cat'
+  .[3.14,11,'cat',True,99]
+  
+  []  bacon.remove('cat')
+  []  print(bacon)
+     [3.14,11,'cat',True,99]
+     
+ []
+ 
+ 
+ Q9. What are the list concatention and list replication operators?
+ ANS: List concatention operatoris'+'while list replication operator is '*'
+ 
+ 
+ Q10. What is difference between the list methods append()and insert()?
+ .Append method appends the given object to the end of the list always.
+ .Insert method accepts two arguments, index at which the element needs to be inserted and the object to insert.
+ 
+ []
+ 
+ Q11.What are the two methods for removing items from a list?
+ Two method used for removing items from a list are:
+     .List.remove(object)->Removes the first occurrence of the given object from the list
+     List.pop(index= -10)->Removes and returns item at the index (default is -1,the last element)
+     
+     []
+ 
+ 
+ Q12.Describe how list values and string values are identical.
+ While list is a collection of values in python,string is a collection of characters.Both list and strings are itrable in python and a for loop can be
+ used around a list or string object to iterate through eachelement in the list/string.
+ 
+ []
+ 
+ 
+ Q13.What's th edifference between tuples and lists?
+ Tuples are immutable where aaas lists in python are mutable.So once created,the items inside a tuple cannot be changed.
+ 
+ []
+ 
+ Q14.How do you type a tuple value that only contains the integer 42?
+ tup = tuple([32])
+ 
+ [] tup = tuple([32])
+ print(tup)
+ 
+    (32,)
+ []
+ 
+ 
+ Q15.How do you get a list value's tuple form?How do you get a tuple value's list form?
+ 
+By using type casting
+ 1.b = tuple([42,3,5])
+ 2.type(b)#tuple
+ 3.c = list(b)
+ 4.type(c)#list
+ 
+ []  b = tuple([42,3,5])
+    type(b)  #tuple
+    c = list(b)
+    type(c) #list
+    
+    list
+    
+    []
+    
+Q16.Variables that "contain"list values are not necessarily lists.themselves.Insted,what do they contain?
+They contain references to the list values
+
+var = [1,2,3]
+print(var)
+print(id(var))
+
+Ans:[1,2,3]
+1359003680000
+
+[]
+
+
+Q17.How do you distinguish between copy.copy() and copy.deepcopy()?
+.copy()return a shallow copy of list and deepcopy()return a deep copy of list.
+.deepcopy:In case of deep copy,a copy of object is copied in other object .it means that any changes made to a copy of object do not
+reflect in the original object.
+.shallow copy:In case of shallow copy, a refernce of object is copied in other object.It means that any chages made to a copy of object
+do reflect in the original object.

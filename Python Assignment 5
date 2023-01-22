@@ -1,0 +1,93 @@
+Q. What does an empty dictionary's code look like?
+
+# Empty dictionary
+emptyDict = {}
+type(emptyDict)
+
+dict
+
+
+Q2. what is the values of a dictionary value with the key 'foo and the value 42?
+
+#The value will be 42
+my_dict = {'foo':42}
+my_dict['foo']
+
+42
+
+Q3.What is the most significant distinction between a dictionary and a list?
+
+#The dictionary is create using {} or dict{}
+dict3 = {'k1', 'k2': 2+3j}
+
+#The list is created using [] or list ()
+list3 = [12,23,45]
+
+
+Q4. what happens if you try to access spam['foo']if spam is {'bar':100}?
+
+It will throw an error
+
+spam = ['bar':100}
+spam['foo']
+
+
+Q5.If a dictionary is stored in spam,
+#what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?
+
+#There is no difference 
+#'cat' in spam:This expression checks whether there is a 'cat' KEY in the dictionary
+#'cat' in spam.keys(): This will check whether there is a key 'cat' in spam.
+
+dict5 = {'k1':123, 'k2':2+3j}
+a = 'k1' in dict5
+b = 'k1' in dict5.keys()
+print(a,b)
+
+True True
+
+
+Q6.If a dictionary is stored in spam,
+# what is the difference between the expression 'cat' in spam and 'cat' in spam.values()?
+
+# Difference:
+# 'cat' in spam: This expression checks whethere there is a 'cat' KEY in the dictionary
+# 'cat' in spam.values():This will checks whether there is a values 'cat' in spam.
+
+spam = {'cat':123, 'k2': 2+3j}
+a = 'cat' in spam
+b = 'cat' in spam.values()
+print(a,b)
+
+True False
+
+
+
+Q7.What is a shortcut for the following code ?
+# if 'color' not in spam:
+# spam['color'] = 'black'
+
+spam
+{'cat': 123, 'k2': (2+3j)}
+
+# shortcut code 
+spam.setdefault('color','black')
+
+
+'black'
+
+[]  spam
+  {'cat':123, k2': (2+3j), 'color':'black'}
+  
+[]
+
+
+
+
+Q8.How do you "pretty print" dictionary values using which module and function?
+
+# By importing pprint and using pprint.pprint(dict_name)
+  import pprint
+  pprint.pprint(spam)
+  
+  {'cat':123, 'color': 'black', 'k2': (2+3j)}

@@ -1,0 +1,146 @@
+Q1.What are escape characters, and how do you use them?
+.In python strings,the backslash()is a special character,also called the "escape"character.It is uesd in representing certain whitespace
+characters:"\t"is a tab,"\n"is a newline,and "\r"is a carriage return
+.Prefixing a special character with()turns it into an ordinary character.This is called "escaping".For example,"\'"is the single quote
+character.'it's Sunday'therefore is a valid string and equivalent to "it's Sunday".
+
+Q2.what do the escape characters n and t standfor ?
+
+. "\t" is for tab space,"\n"is for a newline
+
+Q3. What is the way to include backlash characters in a string?
+
+You need to append backlash with another backlash to include the backlash in your strings
+eg.
+[] print("it's a back slash \ in a sentence")
+  it's a back slash \ in a sentence
+  
+  print("it's a back slash \\ in a sentence")
+   it's a back slash \ in a sentence
+   
+[]    print("it's a back slash \\\ in a sentence")
+      it's a back slash \\ in a sentence
+      
+ 
+ 
+ Q4. The string "Howl's Moving Castle"is a corrent value.why isn't the single quote character in the word Howl's not escaped a problem?
+ 
+ The string "Howl's Moving Castle"is a correct value.why isn't the single quote character in the word Howl's not escaped a problem
+ 
+ 
+ Q5. How do you write a string of newlines if you don't want to use the n character?
+ 
+ we can use Pythons multi line strings that done using triple quotes
+ Example:
+ []  string_multiple = """This is my 
+     multi linne
+     string by 
+     name string_multiline"""
+     
+     []  string_multiline
+     'this is my\nmulti line\nstring by\nname string_multiline'
+     
+     
+Q6. What are the values of the given expressions?
+
+. 'Hello,World![1]'e'
+. 'Hello, World!'[0:5]'Hello'
+. 'Hello,World!'[:5]'Hello'
+. 'Hello',World![3:]'lo,world!'
+
+
+[] 'Hello, world!'[1]
+    'e'
+    
+[] 'Hello,World!'[0:5]
+     'Hello'
+  
+ []'Hello,World!'[:5]
+    'Hello'
+    
+ [] 'Hello, World!'[3:]
+     'lo,world!'
+     
+     
+     
+Q7. What are the values of the following expressions?
+
+. 'Hello'Upper()-> HELLO'
+. 'Hello',Upper().isupper()->True
+. 'Hello',Upper().lower()->'hello'
+
+
+[]  'Hello'.upper()
+     'HELLO'
+     
+[] 'Hello'.upper().isupper()
+    True
+    
+[] 'Hello'.upper().lower()
+     'hello'
+     
+     
+     
+Q8. What are the values of the following expressions?
+
+. 'Remember,remember,the fifth of july'..Split()->['Remember',,'remember',,'the','fifth','of''July.']
+. '-'.join('There can only one.'.split())->'There-can-only-one'.
+
+
+[]  'Remember,remember,the fifth of July.'.split()
+    ['Remember,', remember,','the','fifth','of', 'July,']
+    
+    
+[] '-',join('There can only one.'.split())
+    'There-can-only-one.'
+    
+    
+    
+    
+Q9.What are the methods for right-justifying,left-justifying,and centering a string?
+
+[]  # left justified
+    str1 = "Data Scientist"
+    str1.ljust(19,";")
+    
+    'Data Scienctist;;;;'
+    
+    
+ []  #right justified
+     str1 = "Data Scienctist"
+     str1.rjust(22,"-")
+     
+     '-------Data Scienctist'
+     
+     
+[]  #certer justified
+    str1 ="center"
+    str1.center(40,'*')
+    
+    
+    '****************Center*******************'
+    
+    
+    
+Q10.What is the best way to remove whitespace characters from the start or end?
+
+we can use:
+. Istrip()->removes white spacesfrom left of the string
+. rstrip()->removes white space from right of the string
+
+str1 = "                           hello             "
+print(str1)
+print(str1.lstrip())
+                         hello
+hello
+
+[] str1 = "hello                            "
+print(str1)
+print(str1.rstrip())
+
+
+hello
+hello
+
+
+[]

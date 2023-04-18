@@ -1,0 +1,34 @@
+Q1 What makes Numpy.shape()differnt from Numpy.size()?
+
+
+
+
+
+
+
+
+
+
+
+
+Q2. In NumPy. describe the idea of broadcasting.
+Ans:The term broadcasting describe how NumPy treats arrays with differnt shape during arithmetic operations.
+Subject to certain constraints, the smaller arry is "broadcast" across the larger array so that they have compatible shapes.
+
+
+Q3. what make Python better than other libraries for numerical computation?
+Ans: One of the main advanatages of using Python for mathematics is its extensive library of numerical and scientific computing tools.
+These libraries provide a range of functions and tools that make it easier to perform complex calculation s anad analysis , as well as
+automate repetitive tasks.
+
+
+
+Q4. How does NumPy deal with files?
+Ans: NumPy introduces a simple file formatfor ndarray objects.This .npy file stores data, shape, dtype and ohter information required 
+to reconstruct the ndarray in a disk file such that the array is correcly retrieved even if the file is on another machine with differnt archicture.
+
+
+Q5.Mention the importance of NumPy.empty().
+Ans: The numPy module of Python provides a function called numpy.empty(). This function is used to create an array without initializing
+the entires of given shape and type. Just like numpy.zeros(), the numpy.empty()function doesn't set the array values to zero, and it is quite faster 
+than the numpy.zeros().This functionrequires the user to set all the values in the array manually and shouuld be used with caution.

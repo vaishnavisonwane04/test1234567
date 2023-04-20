@@ -28,4 +28,18 @@ DataFrames are commonly used.
 They allow for easy manipulation and analysis of data,such as filtering,grouping and merging.
 
   Q3.What role does pandas play in data cleaning?
+  Ans:Data scientists spend a huge amount of time cleaning datasets and getting them in the form in which theycan work.
+  It is an essential skill of data scientists to be able to work with messy data,missing values,and.inconsistant,noisy,or nonsensical
+  data.To work smoothly, python provides a built-in module,pandas.Pandas is the popular python library that is mainly used for data processing purpose 
+  like cleaning,manipulation,and analysis.Pandas stand for "Python Data Analysis Library".It consists of classes to read,process, and write csv files.
+  There are numerous Data cleaning tools present,but the pandas library provides a really fast and efficient way to manage and explore data.It does that by providing 
+  us with series and DataFrames, which help us represent data efficintly and manipulate it in various ways.
+  
+  
+  Q4.How do you use pandas to make a data frame out of n-dimensional arrays?
+  To convert an array to a dataframe with python you needto 1)have your Numpy arrray(e.g.np_array),and2)usethe pd.DataFrame()constructor
+  like this:df=pd.DataFrame(np_array,columns=['column1','column2']).Remember,that each column in your Numpy arrayneeds to be named with columns.
+  
+  
+  Q5.Explain the notion of pandas plotting.
   Ans:

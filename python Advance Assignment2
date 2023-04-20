@@ -1,0 +1,31 @@
+Q1.Explane three-dimensional data indexing.
+
+
+
+
+
+
+
+
+
+
+Q2. What's the difference between a series and a dataframe?
+Ans:Series 
+1.A series is a one-diamensional array-like object that can hold any data typw such as integers, 
+float, strings, or python object.
+2. It is the basic building block of the pandas library, which is used for data analysis and manipulation.
+The series has two main components an index and a set of values. 
+3. The index provides a label for each element in the series, while the values are the dataitself.
+the index can be either automatically generated or specified by the user.series are commonly used to represent a 
+single cloumn of data, such as time series or a colume of values from a database table
+
+DataFrame:
+1.DataFrame, on the other hand, are two-dimensional tabular data structures consisting of rows and columes.
+they can be thought of as a collection of series object that share the same index.
+2. Like series,DataFrames can hold any data type and have an index, but they also have column names
+DataFrames are commonly used.
+3.The store and manipulate data in a strucutred way, such as in a spreadsheet or database tabale.
+They allow for easy manipulation and analysis of data,such as filtering,grouping and merging.
+
+  Q3.What role does pandas play in data cleaning?
+  Ans:

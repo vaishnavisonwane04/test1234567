@@ -1,0 +1,31 @@
+Q1.what is the process for loading a dataset from an external source?
+Ans: You can load data using the IMPORT and EXPORT statements and combine that with furtherpost-processing through subselects.
+You can even specify a statement instead of a table name for the external data source which is executed on that system. for example,
+to load a certain part of a table into Exasol.
+
+
+Q2.How can we use pandas to read JSON files?
+Ans:The read_jaon()is a function in the pandas library that helps us read JSON data or JSON data files. We can pass the path of the 
+JSON file or we can pass a python dictionary (as it is similar to JSON) to read it.The read-json()function takes a json files and return 
+a DataFrame that we can print further.
+
+
+Q3. Describe the signification of DASK.
+Ans:Dask is flexible library for parallel computing in python.Dask is composed of two parts.Dynamic task scheduling optimized for 
+computation.This is similar to Airflow. Luigi,Celery,or Make, but optimized for interactive computational workloads.many software 
+project integrate with Dask or use Dask to power components of their infrastructure. 
+
+
+
+Q4.Describe the functions of DASK.
+Ans:The Dask delayed function decorates your functions so that they operate lazily.Rather than executing your 
+function immediately. it will defer execution, placing the function and its arguments into a task graph, wraps
+a function or object to produce a Delayed. We used the dask.
+
+
+Q5.Describe Cassandra's features.
+ANS:There are a lot of out standing technical features which makes Cassandra very popular. Following is a list of some popular features 
+of Cassandra.
+1.High Scalability
+Cassandra is highly scalable which facilitates you to add more hardware to attach more customers and  more data as per requirement.
+2.Ri

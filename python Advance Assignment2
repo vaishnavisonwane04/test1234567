@@ -27,6 +27,8 @@ DataFrames are commonly used.
 3.The store and manipulate data in a strucutred way, such as in a spreadsheet or database tabale.
 They allow for easy manipulation and analysis of data,such as filtering,grouping and merging.
 
+
+
   Q3.What role does pandas play in data cleaning?
   Ans:Data scientists spend a huge amount of time cleaning datasets and getting them in the form in which theycan work.
   It is an essential skill of data scientists to be able to work with messy data,missing values,and.inconsistant,noisy,or nonsensical
@@ -36,10 +38,17 @@ They allow for easy manipulation and analysis of data,such as filtering,grouping
   us with series and DataFrames, which help us represent data efficintly and manipulate it in various ways.
   
   
+  
   Q4.How do you use pandas to make a data frame out of n-dimensional arrays?
   To convert an array to a dataframe with python you needto 1)have your Numpy arrray(e.g.np_array),and2)usethe pd.DataFrame()constructor
   like this:df=pd.DataFrame(np_array,columns=['column1','column2']).Remember,that each column in your Numpy arrayneeds to be named with columns.
   
   
+  
   Q5.Explain the notion of pandas plotting.
-  Ans:
+  Ans:plotting is a graphical representation of a data set that show a relationship betweentwo or more variables.MATLAB plots play
+  an essential role in the field of mathematics, science,engineering, tecnology,and finance for sattistics and data analysis.
+  pandas uses the plot() method to create diagrams.we can use pyplot, submodule of the matplotlib libraray to visualize the diagram on the screen.
+  
+  
+  

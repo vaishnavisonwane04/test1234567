@@ -48,3 +48,4 @@ units of code that area eventually derived from the process.In between, each obj
 even more generic classses are defined so that objects can share models and reuse the class definitions in their code.Each object
 is an instance of a particular calss or subsclass with the class's own methods or procedures and data variables. An object is what 
 actually runs in the computer.
+Example:A dog has states-color,name, breed as well as behaviour wagging the tail,braking,eating.An object is an instance of a class.

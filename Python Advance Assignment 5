@@ -26,5 +26,25 @@ records in two ways using a single query in MySQL.
 2.UPDATE Syntax:MySQL UPDATE query is a DML statement used to modify the data of the MySQL table within the database ina real life
 scenario, ecord are changed over a period of time. So we need to make chaneds in the values of the tables also.To do so,it is required
 to use the UPDATE query. 
+3. DROP Syntax: The MySQL Drop user statement allows us to remove one more usessr accounts and their privilges from the database server.
+If the account does not exits in the database server, it gives an error.
+If you wan tto use the drop user statement,it is required to have a global privilege of create user statement or the DELETE privilege for the MySQL 
+system schema.
+
+
 Q5,Describe MongoDB's features.
-Ans:
+Ans:MongoDB supports feild quieries, range queries, and regular expression searches.Queries can return specific feilds and also account for user-defined
+functions.This is made possible because MongoDB indexes BSON documents and uses MongoDB Query Language(MQL)
+These area somme important features of MongoDB
+1. Support ad hoc queries
+In MongoDB you can search by feild range query and it also supports regularexpression searches.
+2.Indexing
+You can index any feild in a document
+3.Replication
+MongoDB supports Master Slave replication
+A master can perform Read and writes and Slave copies data from the master and can only be used for reads or back up (not writes)
+4.Duplication of data
+MongoDB can run over multiple servers.The data is duplicated to keep the system up and also keep its running condition in case of hardware failure.
+5.Load Balancing
+It has an automatic load balancing configuration because of data placed in shards.
+

@@ -1,12 +1,7 @@
 Q1.Explane three-dimensional data indexing.
-
-
-
-
-
-
-
-
+Ans:Introduction to Numpy three diamensional array.Array in NumPy area data structures eith high performance suitable for mathematical operations.
+The three levels of arrays indexing is used to obtain individual element from an array,nested inside one another represent the three dimanesional aray in python,
+where each levelmeans one dimension.
 
 
 Q2. What's the difference between a series and a dataframe?

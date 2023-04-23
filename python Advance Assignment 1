@@ -1,14 +1,6 @@
 Q1 What makes Numpy.shape()differnt from Numpy.size()?
-
-
-
-
-
-
-
-
-
-
+Ans:Numpy arrays have an attribute called shape that return a tuple with each index having the number of corresponding elements
+In python, numpy.size()function count the number of element along a given axis.
 
 
 Q2. In NumPy. describe the idea of broadcasting.

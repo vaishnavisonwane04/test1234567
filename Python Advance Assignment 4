@@ -39,7 +39,8 @@ cassandra is one of the shells inthe whole cassandra database.Many cassandra clu
 
 
 Q4.Give an example to demonstrate the class notion.
-Ans:
+Ans:Inreal time development we create classes and use it from anothe rclass.It is a better approach than previous one.Let's see a simple example,
+where we are having main(0 method in another class.
 
 
 Q5.Use an example to explain the object.

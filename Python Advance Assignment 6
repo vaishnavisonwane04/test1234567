@@ -1,0 +1,39 @@
+Q1.Explain why selenium is important in web Scraping.
+Ans:Selenium is needed in order to carry out web scraping and automate the chrome browser we'll be using .
+Selenium uses the webdrive protocol, therefore th ewebdriver manager is imported to obtain the Chrome Driver compatible with the version 
+of the browser being used.
+
+Q2. What's the difference between scraping images and scraping websites?
+Use an example to demonstrate your point.
+Ans:A) Images Scraping:
+Image scraping is a subset of the web scraping technology.
+While web scraping deals with all forms of web data extraction, 
+image scraping only focuses on the media side – images, videos, audio, and so on.
+
+B): Websites Scraping:
+Web scraping refers to the extraction of data from a website.
+This information is collected and then exported into a format that is more useful for the user. 
+Be it a spreadsheet or an API.
+Example:Dynamically Typed
+In Python, we don't need to define data types for variables;
+we can directly use the variable wherever it requires. 
+It saves time and makes a task faster. Python defines its classes to identify the data type of variable.
+
+Vast collection of libraries
+Python comes with an extensive range of libraries such as NumPy, Matplotlib, Pandas, Scipy, etc.,
+that provide flexibility to work with various purposes. It is suited for almost every emerging field 
+and also for web scrapping for extracting data and do manipulation.
+
+Q3.Explain how MongoDB indexes data.
+Ans:MongoDB uses multikey indexes to index the content stored in arrays.
+If you index a field that holds an array value, MongoDB creates separate index entries for every element of the array. 
+These multikey indexes allow queries to select documents that contain arrays by matching on element or elements of the arrays.
+
+Q4.What is the significance of the SET modifier?
+Ans:Set expressions are used to define the scope of a calculation. 
+The central part of the set expression is the set modifier that specifies a selection. 
+This is used to modify the user selection, or the selection in the set identifier, and the result defines a new scope for the calculation.
+
+Q5. Explain the MongoDB aggregation framework.
+Ans:Aggregation in MongoDB allows for the transforming of data and results in a more powerful fashion than from using the find() command.
+Through the use of multiple stages and expressions, you are able to build a "pipeline" of operations on your data to perform analytic operations.

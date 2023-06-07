@@ -1,0 +1,52 @@
+Q1.Explain the difference between cassandra and typical databases.
+Ans:# Cassandra
+1.cassandra is used to deal with unstructure data.
+2.canssandra has flexible schema.
+3. In cassandra, a table is a list of "nested kay-value pairs".
+(Row x column key X cloumn value)
+4.In cassandra keyspace is the outermost containerwhich contain data
+corresponding to an application.
+5. In cassandra, tables or column families are the entity of a key space.
+6. In cassandra row is a unit of replication.
+7.In cassandra, column is a unit of stroage.
+# Typical Databases
+1. Databases are an essential part of modern life.
+without them, most computer functions would cease to exist.
+2. If you're someone that relies on storing information within a computer, 
+whether as an individual or for your job, then it's important to understand 
+the different types of databases that exist and how you should use them.
+3. In this guide, we discuss what databases are, including the most common types of databases that you 
+are likely to come across.
+4.A database is a collection of information stored within a computer.Databases are used for everything from stroing
+pictures on your computers to store essential information in an organized and easily searchable way.
+5. As database technology has improved over the years,so too have the different types of databases.There are now many different types of adatabases
+each with its strenghts and weaknesses based on how they designed.
+6.It's especially important for businesses to understand the different types of databases,to ensure they have the mosst efficient setup
+however,some individuals may need to learn this as well.
+
+
+Q2.what exactly is CQLSH?
+ Ans: CQLSH is a command line interface for interacting with cassandra using CQL (the Cassandra Query Language).
+It is shipped with every cassandra package and can be found in thebin/directory alongside the cassandra 
+executable.
+
+
+Q3.Explain the cassandra cluster idea.
+ANS:In this cassandra tutorial we will go through one of the main parts of the cassandra database i.e Cassandra Cluster 
+moreover we will see the meaning of cluster and different layers in cluter.This artical will guide throughthe part of 
+the cluter and the builders associated with it.The cluter is a collection of nodes that represents a single system.A cluter in 
+cassandra is one of the shells inthe whole cassandra database.Many cassandra cluters combines together to from the database in cassandra.
+
+
+Q4.Give an example to demonstrate the class notion.
+Ans:Inreal time development we create classes and use it from anothe rclass.It is a better approach than previous one.Let's see a simple example,
+where we are having main(0 method in another class.
+
+
+Q5.Use an example to explain the object.
+Ans: In object oriented programming (OOP),object are the things you think about first in designing a proram and they areaaslo the 
+units of code that area eventually derived from the process.In between, each object is made into a generic classof object, and 
+even more generic classses are defined so that objects can share models and reuse the class definitions in their code.Each object
+is an instance of a particular calss or subsclass with the class's own methods or procedures and data variables. An object is what 
+actually runs in the computer.
+Example:A dog has states-color,name, breed as well as behaviour wagging the tail,braking,eating.An object is an instance of a class.

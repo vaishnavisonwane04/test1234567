@@ -1,0 +1,49 @@
+Q1. Explain super() in the context of inheritance.
+Ans:The super() function in python makes class inheritance more manageable and extensible.The function returns a temporary object that
+allows reference to a parent class by the keyword super.The super() function has two major use cases:
+1.To avoid the usage of the super(parent)class explicitly.
+2.To enable multiple inheritances.
+
+Q2. Describe the file-handling system.
+Ans:The key function for working with files in python is the open()function.The open()function takes two parameters;filename,and 
+mode.There are four different methods (modes) for opening a file:
+1."r"-Read-Default value.Opens a file for reading, error if the file does not exist.
+2."a"-Append-Opens a file for appending,creates the file if it does not exist.
+3."w"-Write-Opens a file for writing,creates the file if it does not exist.
+4."x"-create-Creates the specified file,returns an error if the file exists
+
+
+Q3.In python, explain multiple inheritance.
+Ans:Multiple Inheritance in python is a well-known fearture that is suppoerted by all the major object-oriented programming languages.
+It can be described as a process where the child class or object inherits th emethods and attributes from one or more parent classes.
+
+
+Q4.write the MYSQL query syntax for INSERT,UPDATE,and DROP.
+Ans:1.INSERT Syntax: MySQL INSERT statement is used to store or add data in MySQL table within the database.We can perform insertion of 
+records in two ways using a single query in MySQL.
+# Insert record in a single row
+#Insert record in multiple rows
+2.UPDATE Syntax:MySQL UPDATE query is a DML statement used to modify the data of the MySQL table within the database ina real life
+scenario, ecord are changed over a period of time. So we need to make chaneds in the values of the tables also.To do so,it is required
+to use the UPDATE query. 
+3. DROP Syntax: The MySQL Drop user statement allows us to remove one more usessr accounts and their privilges from the database server.
+If the account does not exits in the database server, it gives an error.
+If you wan tto use the drop user statement,it is required to have a global privilege of create user statement or the DELETE privilege for the MySQL 
+system schema.
+
+
+Q5,Describe MongoDB's features.
+Ans:MongoDB supports feild quieries, range queries, and regular expression searches.Queries can return specific feilds and also account for user-defined
+functions.This is made possible because MongoDB indexes BSON documents and uses MongoDB Query Language(MQL)
+These area somme important features of MongoDB
+1. Support ad hoc queries
+In MongoDB you can search by feild range query and it also supports regularexpression searches.
+2.Indexing
+You can index any feild in a document
+3.Replication
+MongoDB supports Master Slave replication
+A master can perform Read and writes and Slave copies data from the master and can only be used for reads or back up (not writes)
+4.Duplication of data
+MongoDB can run over multiple servers.The data is duplicated to keep the system up and also keep its running condition in case of hardware failure.
+5.Load Balancing
+It has an automatic load balancing configuration because of data placed in shards.

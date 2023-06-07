@@ -1,0 +1,49 @@
+Q1.Explane three-dimensional data indexing.
+Ans:Introduction to Numpy three diamensional array.Array in NumPy area data structures eith high performance suitable for mathematical operations.
+The three levels of arrays indexing is used to obtain individual element from an array,nested inside one another represent the three dimanesional aray in python,
+where each levelmeans one dimension.
+
+
+Q2. What's the difference between a series and a dataframe?
+Ans:Series 
+1.A series is a one-diamensional array-like object that can hold any data typw such as integers, 
+float, strings, or python object.
+2. It is the basic building block of the pandas library, which is used for data analysis and manipulation.
+The series has two main components an index and a set of values. 
+3. The index provides a label for each element in the series, while the values are the dataitself.
+the index can be either automatically generated or specified by the user.series are commonly used to represent a 
+single cloumn of data, such as time series or a colume of values from a database table
+
+DataFrame:
+1.DataFrame, on the other hand, are two-dimensional tabular data structures consisting of rows and columes.
+they can be thought of as a collection of series object that share the same index.
+2. Like series,DataFrames can hold any data type and have an index, but they also have column names
+DataFrames are commonly used.
+3.The store and manipulate data in a strucutred way, such as in a spreadsheet or database tabale.
+They allow for easy manipulation and analysis of data,such as filtering,grouping and merging.
+
+
+
+  Q3.What role does pandas play in data cleaning?
+  Ans:Data scientists spend a huge amount of time cleaning datasets and getting them in the form in which theycan work.
+  It is an essential skill of data scientists to be able to work with messy data,missing values,and.inconsistant,noisy,or nonsensical
+  data.To work smoothly, python provides a built-in module,pandas.Pandas is the popular python library that is mainly used for data processing purpose 
+  like cleaning,manipulation,and analysis.Pandas stand for "Python Data Analysis Library".It consists of classes to read,process, and write csv files.
+  There are numerous Data cleaning tools present,but the pandas library provides a really fast and efficient way to manage and explore data.It does that by providing 
+  us with series and DataFrames, which help us represent data efficintly and manipulate it in various ways.
+  
+  
+  
+  Q4.How do you use pandas to make a data frame out of n-dimensional arrays?
+  To convert an array to a dataframe with python you needto 1)have your Numpy arrray(e.g.np_array),and2)usethe pd.DataFrame()constructor
+  like this:df=pd.DataFrame(np_array,columns=['column1','column2']).Remember,that each column in your Numpy arrayneeds to be named with columns.
+  
+  
+  
+  Q5.Explain the notion of pandas plotting.
+  Ans:plotting is a graphical representation of a data set that show a relationship betweentwo or more variables.MATLAB plots play
+  an essential role in the field of mathematics, science,engineering, tecnology,and finance for sattistics and data analysis.
+  pandas uses the plot() method to create diagrams.we can use pyplot, submodule of the matplotlib libraray to visualize the diagram on the screen.
+  
+  
+  

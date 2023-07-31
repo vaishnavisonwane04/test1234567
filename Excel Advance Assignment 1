@@ -1,0 +1,26 @@
+Q1.What do you mean by cells in an excel sheet?
+Ans:A cell is a rectangular area formed by the intersection of a column and a row.Cell are identified by the Cell Name (or 
+Reference,which is found by combining the Column Letter with the Row Number.For example the cell in cloumn "C"in Row "3"would be cell c3.
+
+Q2.How can you restrit someone from copying a cell from your worksheet?
+Ans:Yes,it is possible.In order to protect your worksheet from getting copied,you need to go into Menu bar > Review > Protect sheet > Password.
+By entering the password,you can secure your worksheet from getting copied by other.
+
+Q3.How to meve or copy the worksheet into another workbook?
+Ans:On the Edit menu,click Sheet > Move or Copy Sheet.On the To book menu,click the workbook that you want to copy the sheet to.
+To create a new workbook that contain the moved sheet box, click the sheet that you want to insert the copied sheet before,or click move to end.
+
+Q4.Which key is used as a shortcut for opening a new window document?
+Ans:Ctrl + N.key PointsCtrl+N is a shortcut key most often used to create a new document.window,workbook, or another type of file. Ctrl+N:
+Create a new file.Ctrl+O:Open an existing file.
+
+Q5.What are the things that we can notice after opening the Excel interface?
+Ans:1.Formula Bar.The Formula Bar is found just beside the Formula Quick Menu..
+2. Status Bar.The Status Bar in the bottom- left corner of the Excel window displays various information 
+about the current mode of the workbook.
+3.Zoom Slider Control.
+
+Q6.When to use a relative cell reference in eccel?
+Ans:Relative reference are used when we want to perform a similar operation on multiple cells and the formula 
+must change according to the relative address of column and row.For example,we want to add the marks of two 
+subject entered in column A and Column B and display the result in column C.

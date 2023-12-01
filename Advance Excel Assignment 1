@@ -1,0 +1,51 @@
+Q1. What do you mean by cells in an excel sheet?
+Ans:In an Excel sheet, cells refer to individual rectangular boxes where you can enter and store data. 
+Think of them like tiny compartments that hold information. 
+Each cell has a unique address based on its column (identified by letters) and row (identified by numbers). 
+For example, the cell at the intersection of column B and row 3 would be called cell B3. 
+You can type text, numbers, formulas, or even apply formatting to cells in order to organize and manipulate data in Excel.
+Cells are the basic building blocks of an Excel spreadsheet.
+
+Q2.How can you restrict someone from copying a cell from your worksheet?
+Ans:1. Select the cell or range of cells that you want to restrict.
+2. Right-click on the selected cell(s) and choose "Format Cells" from the context menu.
+3. In the Format Cells dialog box, go to the "Protection" tab.
+4. Uncheck the "Locked" option.
+5. Click on OK to close the dialog box.
+6. Now, go to the Review tab in Excel's ribbon menu.
+7. Click on "Protect Sheet" in the Changes group.
+8. In the Protect Sheet dialog box, you can
+
+Q3. How to move or copy the worksheet into another workbook?
+Ans:1. Open both the source workbook (the one containing the worksheet you want to move or copy) and
+the target workbook (the one where you want to move or copy the worksheet to).
+2. In the source workbook, right-click on the sheet tab of the worksheet you want to move or copy.
+3. From the context menu that appears, select "Move or Copy".
+4. In the Move or Copy dialog box, choose the target workbook from the drop-down list under "To book".
+5. Select whether you want to create a copy of the worksheet or move it by checking/unchecking "Create a Copy" option.
+6. Choose where you want to place the moved/copied worksheet within your target workbook by selecting a sheet from "Before sheet" list.
+7. Click OK to complete moving/copying of your worksheet.
+The selected worksheet will now be moved/copied into your target workbook accordingly.
+
+Q4.Which key is used as a shortcut for opening a new window document?
+Ans:The shortcut key for opening a new document in Microsoft Word is "Ctrl + N". 
+By pressing and holding the "Ctrl" key on your keyboard, then pressing the letter "N", 
+you can quickly open a new window document in Word.
+
+Q5.What are the things that we can notice after opening the Excel interface?
+Ans:1. Ribbon: At the top of the Excel window, you will see a ribbon that contains various tabs 
+such as File, Home, Insert, Formulas, Data, and more. These tabs provide access to different commands and features in Excel.
+2. Workbook: The main working area in Excel is called a workbook. By default, you'll have one workbook open 
+with three blank worksheets labeled Sheet1, Sheet2, and Sheet3.
+3. Worksheet: Within a workbook, you'll find individual worksheets or spreadsheets.
+Each worksheet appears as a tab at the bottom of the Excel window and can be renamed according to your needs.
+4. Cells: The main building blocks of an Excel worksheet are cells. These rectangular boxes hold data and
+
+Q6.When to use a relative cell reference in excel?
+Ans:1. Calculations: If you have a formula that performs calculations based on values in adjacent cells, 
+using relative references allows the formula to adapt and calculate correctly for each row or column.
+2. Replicating formulas: When you copy a formula across multiple cells, using relative references ensures 
+that the formula adjusts its cell references accordingly, maintaining the same relative position.
+3. Dynamic range selection: Relative cell references can be useful when selecting data ranges that may 
+change in size or shape. By using relative references in range selections, your formulas can adapt as needed.
+4. Creating templates: Relative cell references are often used

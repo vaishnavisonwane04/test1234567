@@ -1,0 +1,30 @@
+Q1.What does the dollar ($) sign do?
+Ans:A dollar sign ($) is the symbol found on the same key as the number four(4) key on United States QWERTY keyboard.
+The dollar sign represents a U.S.currency value,e.g.,$10.00 for ten dollars.As seen in sign the picture,
+the dollar sign looks like the letter "S" with a vertical line going through the middle.
+
+Q2.How to change the Reference from Relative to Absolute(or Mixed)?
+Ans:Another way to convert from relative to absolute is to use the F4 key.To do this select the cell or range of cells
+that you want to convert.Then press the F4 key on your keyboard.This will cycle through the different reference options 
+and eventually land on an absoulte reference.
+
+Q3.Explain the order of operations in excel?
+Ans:When evaluating a formula, Excel follows a standard math protocol called "order of operations". 
+In general, Excel's order of operation follows the acronym PEMDAS (Parentheses, Exponents, Multiplication, Division, Addition, Subtraction) 
+but with some customization to handle the formula syntax in a spreadsheet.
+
+Q4.what, according to you,are the top 5 function in excel and write a basic syntax for any of two ?
+Ans:1.The VLookup Function.
+2.The Concatenate Function.
+3.Text to Columns.
+4.Remove Duplicates.
+5.Pivot Tables.
+
+Q5.When would you use the subtotal function?
+Ans:Use the SUBTOTAL function to exclued filtered or hidden rows when calculating a total on the worksheet.
+You can chooose any onc of the 11 functions that SUBTOTAL can calculate,such as Sum,Average,Count or Max.
+
+Q6.What is the syntax of the  vlookup function?Explain the terms in it?
+Ans:The syntax for VLOOKUP is:=VLOOKUP(lookup_value,range,column_index,[is_sorted]) lookup_value:The value you want 
+to look up.range:The range of cells where the lookup value is located.column_index:The column number of the cell that
+you want to return.

@@ -1,0 +1,41 @@
+Q1.What are the various element of the excel interface?Decribe how they're used.
+ANS:Ribbon: A row of tabs and icons at the top of the window that allows users to quickly find commands for completing tasks
+Quick access toolbar: Provides one-click access to frequently used commands
+Name box: Located to the left of the formula bar, this box displays the cell reference or name of the active cell
+Formula bar: Allows users to view, enter, or edit cell contents
+Status bar: Displays information about the workbook, such as running calculations, and also includes some zoom and view commands
+Data tab: Allows users to perform operations on large sets of data, such as analysis, removing duplicate data, and transposing rows and columns
+Page layout tab: Allows users to prepare their worksheet for printing by adjusting margins, paper orientation, and other page settings
+Title bar: Located near the quick access bar or at the top of the window, this bar displays the name of the program and the open spreadsheet
+
+Q2.Write down the various application of excel in the industry.
+ANS:collection and verification of business data;
+business analysis;
+data entry and storage;
+data analysis;
+performance reporting;
+strategic analysis;
+accounting and budgeting;
+administrative and managerial management;
+
+Q3.On the ribbon, make a new tab. Add some different groups, insertcommands in the groups and name them according to their commands
+added. Copy and paste the screenshot of the steps you followed.
+ANS:In the Customize the Ribbon window, under the Customize the Ribbon list, click the tab that you want to add a group to. 
+Click New Group. To rename the New Group (Custom) group, right-click the group, click Rename, and then type a new name.
+
+Q4.Make a list of different shortcut keys that are only connected to  formatting with their functions.
+ANS:Ctrl+E: Centers a paragraph
+Ctrl+D or Ctrl+Shift+F: Opens the Font dialog box
+Ctrl+Shift+8: Shows all nonprinting characters
+Shift+Enter: Inserts a line break
+Ctrl+Tab: Inserts a tab character in a cell
+
+Q5.What distinguishes Excel from other analytical tools?
+ANS:Excel's main advantages include its wide accessibility, familiarity among users, and versatility in performing
+a range of functions from data entry and budgeting to complex mathematical calculations. 
+Excel is also more cost-effective for users who need a tool for basic data manipulation and visualization.
+
+
+Q6.Create a table and add a custom header and footer to your table.
+ANS:Select the chart sheet or chart where you want to add or change a header or footer element. 
+Go to Insert > Header & Footer. Excel displays the Page Setup dialog box. Select Custom Header or Custom Footer.

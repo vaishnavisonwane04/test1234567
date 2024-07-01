@@ -1,0 +1,63 @@
+Q1. Using Insert Function, give examples of any function available in thedifferent dropdowns present in the function library. For example
+AutoSum, Recently Used, Text, Date & Time, etc.
+ANS:AutoSum:
+- SUM: Calculates the sum of a range of cells.
+- AVERAGE: Calculates the average of a range of cells.
+- COUNT: Counts the number of cells that contain numbers within a range.
+2. Recently Used:
+- VLOOKUP: Searches for a value in the first column of a table and retrieves data from another column in that row.
+- IFERROR: Returns a specified value if a formula generates an error; otherwise, it returns the result of the formula.
+- CONCATENATE: Joins two or more text strings together.
+3. Text:
+- LEFT: Returns the leftmost characters from a text string based on given number of characters.
+- RIGHT: Returns the rightmost characters from a text string based on given number of characters.
+- LEN: Returns the length, or number, of characters in a text string.
+4. Date & Time:
+- TODAY: Returns today's date as per system date and time settings.
+- DAY: Extracts the day value from a given date.
+- YEARFRAC: Calculates fractional years between two dates.
+
+Q2. What are the different ways you can select columns and rows?
+ANS:1. By clicking and dragging the mouse to select multiple columns and rows at once.
+2. By using keyboard shortcuts such as Shift + Arrow keys to select multiple columns and rows.
+3. By using the "Select" or "Highlight" tool in spreadsheet software to manually select specific columns and rows.
+4. By entering specific cell references or ranges in the software's formula bar or selection box to select particular columns and rows.
+
+Q3. What is AutoFit and why do we use it?
+ANS:AutoFit is a feature in Excel and Microsoft Word that automatically resizes cells to fit the size of the data they contain.
+This feature is useful for ensuring that all data in a spreadsheet is clearly visible, and that text doesn't spill out of cells due to bad formatting.
+
+Q4. How can you insert new rows and columns into the existing table?
+ANS: 1. Select the row below where you want to insert the new row.
+2. Right-click on the selected row and choose "Insert" or "Insert Row" from the context menu.
+3. A new blank row will be inserted above the selected row.
+
+1.Select the column to the right of where you want to insert a new column.
+2. Right-click on the selected column and choose "Insert" or "Insert Column" from the context menu.
+3. A blank column will be inserted to the left of the selected column.
+
+
+Q5. How do you hide and unhide columns in excel?
+ANS:To hide columns in Excel, you can right-click on the selected columns and select Hide.
+You can also use the keyboard shortcut Ctrl + 0 to hide selected columns. 
+A double line between two columns indicates that a column is hidden. 
+Right-click: Select the column, right-click on it, and select Unhide
+**Use the **: Home** tab** In the Cells group, click Format, then under Visibility, click Hide & Unhide, and then click Unhide Columns
+Use the keyboard shortcut: Use Ctrl + Shift + 0 to unhide hidden columns 
+
+Q6. Create an appropriate table within the worksheet and use different
+functions available in the AutoSum command.
+ANS:To calculate the total cost, use the AutoSum command:
+1. Click on the cell below the Cost column
+2. Click on AutoSum in the Home tab or use the shortcut Alt + =
+3. Press Enter to get the total cost
+
+To calculate average cost:
+1. Click on the cell below the Total Cost
+2. Click on AutoSum and select Average from the dropdown menu
+3. Press Enter to get average cost
+
+To find maximum and minimum cost:
+1. Click on cells below Total Cost and Average Cost
+2. Click on AutoSum and select Max or Min from dropdown menu
+3. Press Enter to find maximum or minimum cost

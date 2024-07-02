@@ -1,0 +1,100 @@
+Q1.Write a Python program to find sum of array?
+ANS:```python
+def find_sum(arr):
+sum =
+for num in arr:
+sum += num
+return sum
+
+# test the function with an example array
+arr = [1, 2, 3, 4, 5]
+print("Sum of array:", find_sum(arr))
+```
+
+Output:
+```
+Sum of array: 15
+
+Q2. Write a Python program to find largest element inan array?
+ANS:```python
+def find_largest(arr):
+largest = max(arr)
+return largest
+
+# Example usage:
+array = [1, 5, 9, 2, 7]
+print("Largest element:", find_largest(array))
+```
+
+Output:
+```
+Largest element: 9
+
+Q3.Write a Python Program for array rotation?
+ANS:```python
+def rotate_array, k):
+# Determine the number of rotations needed
+rotations = k % len(arr)
+
+# Rotate the array elements
+rotated_arr = arr[-rotations:] + arr[:-rotations]
+
+return rotated_arr
+
+# Test the function with an example array and rotation count
+= [1, 2, 3, 4, 5]
+rotation = 2
+
+rotated_array = rotate_array(array, rotation_count)
+
+print("Original:", array)
+print("Rotated Array:", rotated_array)
+```
+Output:
+``Original Array: [1, 2, 3, 4, 5]
+ated Array: [4, 5, 1 ,2 ,3]
+``This program defines a function `rotate_array` that takes two parameters - `arr`, which the input array to be rotated and `k`, which is the number of positions to by.
+
+Q4.Write a Python program to split the array ans add the first part to the end?
+ANS:```python
+def split_and_add_to_end(arr):
+n = len(arr)
+k = n // 2
+
+first_part = arr[:k]
+second_part = arr[k:]
+
+new_arr = second_part + first_part
+
+return new_arr
+
+# Example usage
+arr = [1, 2, 3, 4, 5]
+result = split_and_add_to_end(arr)
+print(result) # Output: [3, 4, 5, 1, 2]
+```
+
+Q5.Write a python program to check if given array is Monotonic?
+ANS:```python
+def is_monotonic(arr):
+increasing = True
+decreasing = True
+
+for i in range(1, len(arr)):
+if arr[i] > arr[i-1]:
+decreasing = False
+elif arr[i] < arr[i-1]:
+increasing = False
+
+return increasing or decreasing
+
+# Test the function with an array
+arr1 = [1, 2, 3, 4, 5]
+arr2 = [5, 4, 3, 2, 1]
+arr3 = [1 ,2 ,3 ,2]
+
+print(is_monotonic(arr1)) # Output: True
+print(is_monotonic(arr2)) # Output: True
+print(is_monotonic(arr3)) # Output: False
+
+```

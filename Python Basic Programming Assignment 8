@@ -1,0 +1,116 @@
+Q1. Write a Python Program to Add Two Matrices?
+ANS:```python
+def add_matrices(matrix1, matrix2):
+result = []
+for i in range(len(matrix1)):
+row = []
+for j in range(len(matrix1[])):
+row.append(matrix1[i][j] + matrix2[i][j])
+result.append(row)
+return result
+
+# Example matrices
+matrix1 = [[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]]
+
+matrix2 = [[9, 8, 7],
+[6, 5, 4],
+[3, 2 ,1]]
+
+result_matrix = add_matrices(matrix1,matrix2)
+
+for row in result_matrix:
+print(row)
+```
+
+Q2.Write a Python Program to Multiply Two Matrices?
+ANS:
+```python
+def multiply_matrices(matrix1, matrix2):
+result = [[ for _ in range(len(matrix2[]))] for _ in range(len(matrix1))]
+
+for i in range(len(matrix1)):
+for j in range(len(matrix2[])):
+for k in range(len(matrix2)):
+result[i][j] += matrix1[i][k] * matrix2[k][j]
+
+return result
+
+# Example matrices
+matrix1 = [[1, 2, 3],
+[4, 5, 6]]
+
+matrix2 = [[7, 8],
+[9, 10],
+[11, 12]]
+
+result_matrix = multiply_matrices(matrix1, matrix2)
+
+for row in result_matrix:
+print(row)
+```
+
+When you run this program with the example matrices provided (matrix1 and matrix), it will output the resulting multiplied matrix:
+
+```
+[58, 64]
+[139,154]
+```
+
+Q3.Write a Python Program to Transpose a Matrix?
+ANS:```python
+def transpose_matrix(matrix):
+transposed = [[matrix[j][i] for j in range(len(matrix))] for i in range(len(matrix[]))]
+return transposed
+
+# Example usage
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8 ,9]]
+result = transpose_matrix(matrix)
+print(result)
+```
+
+When you run this program with the example matrix provided, it will output the transposed matrix:
+
+```
+[[1, 4, 7], [2, 5, 8], [3, 6 ,9]]
+```
+
+Q4.Write a Python Program to Sort Words in Alphabetic Order?
+ANS:```python
+def sort_words(words):
+sorted_words = sorted(words)
+return sorted_words
+
+# Test the program
+word_list = ['banana', 'apple', 'cherry', 'date']
+sorted_list = sort_words(word_list)
+print(sorted_list)
+```
+
+Output:
+```
+['apple', 'banana', 'cherry', 'date']
+```
+
+In this program, we define a function `sort_words()` that takes a list of words as input. Inside the function, we use the `sorted()` 
+function to sort the words in alphabetical order and assign the result to `sorted_words`. Finally, we return the sorted list.
+
+To test the program, we create a list of words called `word_list` and pass it as an argument to the `sort_words()` function.
+The resulting sorted list is then printed to the console.
+
+Q5.Write a Python Program to Remove Punctuation From a String?
+ANS:```python
+import string
+
+def remove_punctuation(input_string):
+translator = str.maketrans('', '', string.punctuation)
+return input_string.translate(translator)
+
+input_string = "Hello, World! This is a sample text."
+print("Original String:", input_string)
+print("String without Punctuation:", remove_punctuation(input_string))
+```
+
+This program defines a function `remove_punctuation` that takes an input string and uses the `str.maketrans()` and `translate()`
+methods to remove all punctuation characters from the input string. You can test it by passing different strings to the function.

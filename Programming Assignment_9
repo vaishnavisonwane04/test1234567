@@ -1,0 +1,139 @@
+Q1.Write a Python Program to check if the given number is a Disarium Number?
+ANS:# Function to check if a given number is a Disarium Number
+def isDisariumNumber(num):
+# Convert the number to a string to calculate its length
+num_str = str(num)
+# Initialize sum variable
+sum =
+
+# Calculate the sum of each digit raised to the power of its position
+for i in range(len(num_str)):
+sum += int(num_str[i]) ** (i+1)
+
+# Check if the sum is equal to the original number
+if sum == num:
+return True
+else:
+return False
+
+# Input number from user
+num = int(input("Enter a number: "))
+
+# Call the function and print the result
+if isDisariumNumber(num):
+print(f"{num} is a Disarium Number")
+else:
+print(f"{num} is not a Disarium Number")
+
+Q2.Write a Python Program to print all disarium numbers between 1 to 100?
+ANS:```python
+def calculateLength(n):
+length =
+while(n != ):
+length = length + 1
+n = n//10
+return length
+
+def isDisariumNumber(num):
+temp = num
+sum =
+
+# Calculate the number of digits in the given number
+len = calculateLength(num)
+
+while(temp > ):
+digit = temp % 10
+
+# Add each digit raised to the power of its position in the number to get the sum
+sum += digit ** len
+
+# Move to the next digit by dividing by 10 and decrease length by 1 for next iteration.
+temp //= 10
+len -= 1
+
+# If sum is equal to original number, it's a disarium number. Return true.
+
+if(sum == num):
+return True
+
+# Print all disarium numbers between range(1,100)
+print("Disarium numbers between range(1,100): ")
+for i in range(1,101):
+if(isDisariumNumber(i)):
+print(i)
+```
+
+Output:
+```
+Disarium numbers between range(1,100):
+1
+2
+3
+4
+5
+6
+7
+8
+9
+89
+
+Q3.Write a Python program to check if the given number is Happy Number?
+ANS:Here's a Python program to check if a given number is a Happy Number:
+
+```python
+def is_happy_number(num):
+seen = set()
+while num != 1 and num not in seen:
+seen.add(num)
+num = sum(int(digit)**2 for digit in str(num))
+return num == 1
+
+# Test the function
+number = int(input("Enter a number: "))
+if is_happy_number(number):
+print(f"{number} is a Happy Number")
+else:
+print(f"{number} is not a Happy Number")
+```
+
+Q4.Write a Python program to print all happy number between 1 and 100?
+ANS:```python
+def is_happy(n):
+seen = set()
+while n != 1:
+n = sum(int(i)**2 for i in str(n))
+if n in seen:
+return False
+else:
+seen.add(n)
+return True
+
+happy_numbers = [i for i in range(1, 101) if is_happy(i)]
+print("Happy numbers between 1 and 100:", happy_numbers)
+```
+
+Output:
+```
+Happy numbers between 1 and 100: [1, 7, 10, 13, 19, 23, ...]
+```
+
+Q5.Write a Python program to determine whether the given number is a Harshad Number?
+ANS:# Function to determine whether a number is a Harshad Number
+def is_harshad_number(num):
+# Calculate the sum of the digits of the number
+sum_of_digits = sum(int(digit) for digit in str(num))
+
+# Check if the number is divisible by its sum of digits
+if num % sum_of_digits == :
+return True
+else:
+return False
+
+# Get input from user
+num = int(input("Enter a number: "))
+
+# Check if the given number is a Harshad Number
+if is_harshad_number(num):
+print(f"{num} is a Harshad Number")
+else:
+print(f"{num} is not a Harshad Number")

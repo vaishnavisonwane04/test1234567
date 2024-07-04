@@ -1,0 +1,230 @@
+Q1.Write a Python program to find sum of elements in list?
+ANS:```python
+def find_sum(lst):
+# Initialize sum to
+total =
+
+# Iterate through each element in the list
+for num in lst:
+# Add the element to the running total
+total += num
+
+return total
+
+# Test the function
+numbers = [1, 2, 3, 4, 5]
+print("Sum:", find_sum(numbers))
+```
+
+Output:
+```
+Sum: 15
+
+Q2.Write a Python program to Multiply all number in the list?
+ANS:```python
+def multiply_list(numbers):
+result = 1
+for num in numbers:
+result *= num
+return result
+
+numbers = [2, 3, 4, 5]
+print("Original List:", numbers)
+print("Product of all the numbers:", multiply_list(numbers))
+```
+
+When you run this program, it will output:
+```
+Original List: [2, 3, 4, 5]
+Product of all the numbers: 120
+```
+
+Q3. Write a Python program to find smallest number in a list?
+ANS:```python
+def find_smallest_number(numbers):
+if len(numbers) > :
+smallest = numbers[]
+for number in numbers:
+if number < smallest:
+smallest = number
+return smallest
+else:
+return None
+
+# Example usage
+numbers_list = [5, 2, 9, 1, 7]
+smallest_number = find_smallest_number(numbers_list)
+print("The smallest number is:", smallest_number)
+```
+
+Output:
+```
+The smallest number is: 1
+```
+
+Q4. Write a Python program to find largest number in a list?
+ANS:```python
+def find_largest_number(numbers):
+max_num = numbers[]
+for num in numbers:
+if num > max_num:
+max_num = num
+return max_num
+
+# Example usage
+numbers_list = [10, 20, 15, 30, 25]
+largest_number = find_largest_number(numbers_list)
+print("The largest number in the list is:", largest_number)
+```
+
+When you run this program, it will output:
+
+```
+The largest number in the list is: 30
+```
+
+Q5.Write a Python program to find second largest elements in a list?
+ANS:
+```python
+def find_second_largest(lst):
+first_max = float('-inf')
+second_max = float('-inf')
+
+for num in lst:
+if num > first_max:
+second_max = first_max
+first_max = num
+elif num > second_max and num < first_max:
+second_max = num
+
+return second_max
+
+# Example usage
+my_list = [5, 10, 3, 8, 15]
+print("The second largest element is:", find_second_largest(my_list))
+```
+
+When you run this program with the provided example list `[5, 10, 3, 8, 15]`, it will output:
+
+```
+The second largest element is: 10
+
+Q6. Write a Python program to find N largest elements from a list?
+ANS:```python
+def find_n_largest_elements(lst, n):
+lst.sort(reverse=True)
+return lst[:n]
+
+# Example usage
+input_list = [4, 7, 1, 9, 5, 8]
+n = 3
+largest_elements = find_n_largest_elements(input_list, n)
+print(f"The {n} largest elements are: {largest_elements}")
+```
+
+When you run this program with the example input list and N=3, it will output:
+```
+The 3 largest elements are: [9, 8, 7]
+```
+
+Q7.Write a Python program to print even numbers in a list?
+ANS:```python
+def print_even_numbers(lst):
+for num in lst:
+if num % 2 == :
+print(num)
+
+# Example usage
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+print("Even numbers in the list:")
+print_even_numbers(numbers)
+```
+
+When you run this program with the provided example list `numbers`, it will output:
+
+```
+Even numbers in the list:
+2
+4
+6
+8
+```
+
+Q8.Write a Python program to print odd numbers in a list?
+ANS:```python
+# Function to print odd numbers in a list
+def print_odd_numbers(nums):
+for num in nums:
+if num % 2 != :
+print(num)
+
+# Example usage
+numbers = [1, 2, 3, 4, 5, 6, 7]
+print("Odd Numbers:")
+print_odd_numbers(numbers)
+```
+
+When you run this program with the provided example list of numbers, it will output:
+
+```
+Odd Numbers:
+1
+3
+5
+7
+```
+
+Q9.Write a Python program to Remove empty List from list?
+ANNS:```python
+def remove_empty_lists(lst):
+return [x for x in lst if x != []]
+
+# Example usage:
+my_list = [[1, 2, 3], [], [4, 5], [], [], [6]]
+new_list = remove_empty_lists(my_list)
+print(new_list)
+```
+
+Output:
+```
+[[1, 2, 3], [4, 5], [6]]
+```
+
+Q10.Write a Python program to Cloning or Copying a list?
+ANS:```python
+# Using slice operator
+original_list = [1, 2, 3, 4, 5]
+cloned_list = original_list[:]
+
+print("Original List:", original_list)
+print("Cloned List:", cloned_list)
+
+# Using list() constructor
+original_list = [6, 7, 8, 9, 10]
+copied_list = list(original_list)
+
+print("Original List:", original_list)
+print("Copied List:", copied_list)
+```
+
+Q11.Write a Python program to Count Occurrences of an element in a list?
+ANS:```python
+def count_occurrences(lst, element):
+count =
+for item in lst:
+if item == element:
+count += 1
+return count
+
+# Test the function
+my_list = [1, 2, 3, 4, 5, 2, 3]
+target_element = 2
+
+occurrences = count_occurrences(my_list, target_element)
+print(f"The element {target_element} occurs {occurrences} times in the list.")
+```
+
+Output:
+```
+The element 2 occurs 2 times in the list.
+```

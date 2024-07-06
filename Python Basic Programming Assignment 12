@@ -1,0 +1,154 @@
+Q1. Write a Pyhton program to Extract Unique values dictionary values?
+ANS:```python
+def extract_unique_values(dictionary):
+unique_values = set()
+
+for value in dictionary.values():
+if isinstance(value, list):
+unique_values.update(value)
+else:
+unique_values.add(value)
+
+return list(unique_values)
+
+
+# Example usage
+
+my_dictionary = {
+'key1': 10,
+'key2': 20,
+'key3': [30, 40],
+}
+unique_values = extract_unique_values(my_dictionary)
+print(unique_values) # Output: [40, 10, 20, 30]
+```
+
+Q2.Write a Python program to find the sum of all items in a dictionary?
+ANS:```python
+# Define a dictionary
+my_dict = {'a': 10, 'b': 20, 'c': 30}
+
+# Find the sum of all items in the dictionary
+sum_of_items = sum(my_dict.values())
+
+# Print the result
+print("Sum of all items in the dictionary:", sum_of_items)
+```
+
+When you run this program, it will output:
+
+```
+Sum of all items in the dictionary: 60
+```
+
+Q3.Write a Python program to Merging two Dictionaries?
+ANS:```python
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+
+# Merge dict2 into dict1
+dict1.update(dict2)
+
+print(dict1)
+```
+
+Output:
+```
+{'a': 1, 'b': 2, 'c': 3, 'd': 4}
+```
+
+Q4.Write a Python program to Convert key-values list of flat dictionary?
+ANS:```python
+def convert_to_nested_dict(flat_dict):
+nested_dict = {}
+for key, value in flat_dict:
+keys = key.split('.')
+current_level = nested_dict
+for k in keys[:-1]:
+if k not in current_level:
+current_level[k] = {}
+current_level = current_level[k]
+current_level[keys[-1]] = value
+return nested_dict
+
+flat_dictionary = [("a.b.c", 1), ("a.b.d", 2), ("x.y.z", 3)]
+
+nested_dictionary = convert_to_nested_dict(flat_dictionary)
+
+print(nested_dictionary)
+```
+
+Q5.Write a Python program to insertion at the beginning in OrderedDict?
+ANS:from collections import OrderedDict
+
+# creating an empty OrderedDict
+ordered_dict = OrderedDict()
+
+# inserting elements at the beginning of the OrderedDict
+ordered_dict.update({'a': 1})
+ordered_dict.update({'b': 2})
+ordered_dict.move_to_end('b', last=False)
+
+print("OrderedDict after insertion at the beginning:")
+print(ordered_dict)
+
+Q6.Write a Python program to check order of character in string using OrderedDict()?
+ANS:```python
+from collections import OrderedDict
+
+def check_order(string, pattern):
+# Create an ordered dictionary to store the frequency of each character in the string
+char_freq = OrderedDict()
+
+# Iterate through each character in the string and update its frequency in the dictionary
+for char in string:
+if char not in char_freq:
+char_freq[char] = 1
+else:
+char_freq[char] += 1
+
+# Iterate through each character in the pattern and check its order using the ordered dictionary
+for p_char in pattern:
+if p_char not in char_freq or char_freq[p_char] == :
+return False
+
+# Decrease the frequency of p_char by 1 since it has been accounted for
+char_freq[p_char] -= 1
+
+return True
+
+
+# Test cases
+print(check_order("hello", "hlo")) # True (h -> e -> l -> l -> o)
+print(check_order("programming", "rogm")) # True (r -> o -> g -> m)
+print(check_order("python", "pytonh")) # False (h is missing)
+
+```
+Q7.Write a Pyhton program to sort Python  Dictionaries by key or values?
+ANS:
+```python
+# Function to sort dictionary by keys
+def sort_dict_by_keys(d):
+return {k: v for k, v in sorted(d.items())}
+
+# Function to sort dictionary by values
+def sort_dict_by_values(d):
+return {k: v for k, v in sorted(d.items(), key=lambda item: item[1])}
+
+# Sample dictionary
+sample_dict = {'b': 3, 'a': 1, 'c': 2}
+
+# Sort the dictionary by keys and print the result
+sorted_by_keys = sort_dict_by_keys(sample_dict)
+print("Sorted by keys:", sorted_by_keys)
+
+# Sort the dictionary by values and print the result
+sorted_by_values = sort_dict_by_values(sample_dict)
+print("Sorted by values:", sorted_by_values)
+```
+
+When you run this program, it will output:
+```
+Sorted by keys: {'a': 1, 'b': 3, 'c': 2}
+Sorted by values: {'a': 1, 'c': 2, 'b': 3}
+```

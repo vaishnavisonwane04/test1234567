@@ -1,0 +1,147 @@
+Q1.Write a program that calculates and prints the value according to the given formula:
+Q = Square root of[(2 C D)/H]
+Following are the fixed values of C and H:
+C is 50. H is 30.
+D is the variable whose values values should be input to your program in a comma-separated sequence.
+Example
+Let us assume the following comma separated input sequence is given to the program:
+100,150,180
+The output of the program should be:
+18,22,24
+ANS:  ```python
+   import math
+C = 50
+H = 30
+
+input_values = input("Enter the values of D in a comma-separated sequence: ")
+values = input_values.split(',')
+
+result = []
+for d in values:
+q = round(math.sqrt((2 * C * int(d)) / H))
+result.append(str(q))
+
+output = ",".join(result)
+print(output)
+```
+When you run the program and enter the input "100,150,180", it will give you the output "18,22,24" as expected.
+
+
+Q2.Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array.The element
+values in the i-th row and j-th column of the array should be i*j.
+ANS:```python
+def generate_2d_array(X, Y):
+# Initialize an empty 2D array
+result = []
+
+for i in range(X):
+row = []
+for j in range(Y):
+# Calculate the value based on i and j
+value = i * j
+row.append(value)
+result.append(row)
+
+return result
+
+# Take input from user for X and Y
+X = int(input("Enter the number of rows: "))
+Y = int(input("Enter the number of columns: "))
+
+# Generate the 2D array using the input values
+array_2d = generate_2d_array(X, Y)
+
+# Print the generated 2D array
+for row in array_2d:
+print(row)
+```
+
+Q3.Write a prgram that accepts a comma separated sequence of words as ainput and prints the words in 
+a comma-separated sequence after sorting them alphabetically.
+ANS:```python
+def sort_words(input_string):
+words = input_string.split(',')
+words = [word.strip() for word in words]
+words.sort()
+
+return ','.join(words)
+
+input_string = input("Enter a comma separated sequence of words: ")
+sorted_words = sort_words(input_string)
+print("Sorted words:", sorted_words)
+```
+
+Q4.Write a program that accepts a sequence of whitespace separated words as input and prints the words
+after removing all duplicate words and sorting them alphanumerically.
+
+ANS: ```python
+def main():
+# Accept input from the user
+input_str = input("Enter a sequence of whitespace separated words: ")
+
+# Split the input string into individual words
+words = input_str.split()
+
+# Remove duplicate words
+unique_words = list(set(words))
+
+# Sort the unique words alphanumerically
+unique_words.sort()
+
+# Print the sorted and deduplicated words
+print("Sorted and deduplicated words:")
+for word in unique_words:
+print(word)
+
+if __name__ == "__main__":
+main()
+```
+Q5.Write requires the users to input username and password to register.Write a program to check 
+the validity of password input by users.
+ANS: ```python
+def is_valid_password(password):
+# Check if the password meets the following criteria:
+# 1. At least 8 characters long
+# 2. Contains at least one uppercase letter
+# 3. Contains at least one lowercase letter
+# 4. Contains at least one digit
+
+if len(password) < 8:
+return False
+
+has_uppercase = any(c.isupper() for c in password)
+
+if not has_uppercase:
+return False
+
+has_lowercase = any(c.islower() for c in password)
+
+if not has_lowercase:
+return False
+
+has_digit = any(c.isdigit() for c in password)
+
+if not has_digit:
+return False
+
+return True
+
+# Get user input for the password
+password_input = input("Enter your desired password: ")
+
+# Check the validity of the user's input
+if is_valid_password(password_input):
+print("Password is valid.")
+else:
+print("Password is invalid.")
+```
+
+
+
+
+
+
+
+
+
+

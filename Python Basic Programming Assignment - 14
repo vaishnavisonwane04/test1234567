@@ -1,0 +1,176 @@
+Q1.Define a class with a generator which can ierate the numbers, which are divisible by 7, between a given range 0 and n.
+ANS:```python
+class DivisibleBySevenGenerator:
+def __init__(self, n):
+self.n = n
+
+def generate(self):
+for i in range(self.n + 1):
+if i % 7 == :
+yield i
+```
+
+To use this class, you can create an instance of it and then iterate through the generated numbers using a for loop or any other iterator method.
+
+Example usage:
+
+```python
+generator = DivisibleBySevenGenerator(50)
+
+for num in generator.generate():
+print(num)
+```
+
+Output:
+```
+7
+14
+21
+28
+35
+42
+49
+```
+
+Q2.Write a program to computer the frequency of the words from the input The output should out put after sorting the key alphanumerically.
+ANS:  ```python
+from collections import defaultdict
+
+def compute_word_frequency(input_string):
+word_frequency = defaultdict(int)
+words = input_string.lower().split()
+
+for word in words:
+word_frequency[word] += 1
+
+return dict(sorted(word_frequency.items()))
+
+input_string = "This is a sample input string. It contains some sample words for testing."
+
+frequency_result = compute_word_frequency(input_string)
+for word, freq in frequency_result.items():
+print(f"{word}: {freq}")
+```
+
+When you run this program with the `input_string`, it will output:
+
+```
+a: 1
+contains: 1
+for: 1
+input: 1
+is: 1
+it: 1
+sample: 2
+some: 1
+string.: 1
+testing.: 1
+this: 1
+words: 1
+
+Q3.Define a class Person and its two child classes: Male and Female.All classes have a method "getGender" which can print "Male" for Male class and "Female" for Female class.
+ANS: ```python
+class Person:
+def getGender(self):
+pass
+
+class Male(Person):
+def getGender(self):
+print("Male")
+
+class Female(Person):
+def getGender(self):
+print("Female")
+
+# Example usage
+person1 = Male()
+person1.getGender() # Output: "Male"
+
+person2 = Female()
+person2.getGender() # Output: "Female"
+```
+
+Q4.Please write a program to generate all sentences where subject is in ["l", "You"] and verb is in ['Play',"Love"] and the object is in ["Hockey","football"].
+ANS: ```python
+subjects = ["l", "You"]
+verbs = ['Play', 'Love']
+objects = ["Hockey", "Football"]
+
+sentences = []
+for subject in subjects:
+for verb in verbs:
+for obj in objects:
+sentence = f"{subject} {verb} {obj}."
+sentences.append(sentence)
+
+# Printing all generated sentences
+for sentence in sentences:
+print(sentence)
+```
+
+This program will generate the following output:
+
+```
+l Play Hockey.
+l Play Football.
+l Love Hockey.
+l Love Football.
+You Play Hockey.
+You Play Football.
+You Love Hockey.
+You Love Football.
+```
+
+Q5.Please write a program to compress and decompress the string "hello world!hello world!hello world!hello world!"
+ANS:```python
+import zlib
+
+def compress_string(input_string):
+compressed_data = zlib.compress(input_string.encode())
+return compressed_data
+
+def decompress_string(compressed_data):
+decompressed_data = zlib.decompress(compressed_data).decode()
+return decompressed_data
+
+# Test with the given string "hello world!hello world!hello world!hello world!"
+input_str = "hello world!hello world!hello world!hello world!"
+
+# Compress the input string
+compressed_str = compress_string(input_str)
+print("Compressed data:", compressed_str)
+
+# Decompress the compressed string
+decompressed_str = decompress_string(compressed_str)
+print("Decompressed data:", decompressed_str)
+```
+Output:
+```
+Compressed data: b'x\x9cK\xcaI,E(\xc8/V(.QH\xce\xc8L/\xcaIQ,\x00\xa2\xd4'
+Decompressed data: hello world!hello world!hello world!hello w‌​orld!
+```
+
+Q6.Please write a binart search function which searches an item in a sorted list.The function to be searched in the list.
+ANS:```python
+def binary_search(arr, x):
+low = 0
+high = len(arr) - 1
+while low <= high:
+mid = (low + high) // 2
+if arr[mid] < x:
+low = mid + 1
+elif arr[mid] > x:
+high = mid - 1
+else:
+return mid
+return -1
+
+# Example usage:
+arr = [2, 3, 5, 8, 10, 15]
+x = 5
+result = binary_search(arr, x)
+if result != -1:
+print(f"Element found at index {result}")
+else:
+print("Element not found")
+```

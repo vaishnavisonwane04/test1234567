@@ -1,0 +1,66 @@
+Q1.Write a function that stytters a word as if someone is stuggling to read it.The first two letters 
+are repeated twice with an ellipsis... and space after each,and then the word is pronounced with a question mark?.
+Examples stutter('incredible') -'in... in.. incredible?' sutter('enthusiastic')- 'en... en... enthusiastic?'
+sutter('outstanding') - 'ou... ou... outstanding?'
+Hint:- Assume all input is in lower case and at least two characters long.
+ANS:def stutter(word):
+    if len(word) < 2:
+        return word + "... " + word + "? "
+    stuttered = f"{word[:2]}... {word[:2]}... {word}?"
+    return stuttered
+
+# Test cases
+print(stutter('incredible'))  # 'in... in... incredible?'
+print(stutter('enthusiastic'))  # 'en... en... enthusiastic?'
+print(stutter('outstanding'))  # 'ou... ou... outstanding?'
+
+Q2.Create a function that takes an angle in radians and returns the corresponding angle in 
+degress rounded to one decimal place.
+ANS:import math
+
+def radians_to_degrees(radians):
+    degrees = radians * (180 / math.pi)
+    return round(degrees, 1)
+
+# Test cases
+print(radians_to_degrees(1))  # 57.3
+print(radians_to_degrees(math.pi))  # 180.0
+print(radians_to_degrees(math.pi / 4))  # 45.0
+
+Q3.In this challenge,establish if a given integer num is a Curzon number.If 1 plus 2 elevated to num is exactly
+divisible by 1 plus 2 multiplied by num,then num is a Curzon number.Given a non-negative integer num, implement
+a function that returns True if num is a Curzon number, or Flase otherwise.
+ANS:def is_curzon(num):
+    power_part = 2 ** num + 1
+    product_part = 2 * num + 1
+    return power_part % product_part == 0
+
+# Test cases
+print(is_curzon(5))  # True
+print(is_curzon(10))  # False
+print(is_curzon(14))  # True
+
+Q4.Given the side length x find the area of a hexagon.
+ANS:import math
+
+def hexagon_area(x):
+    return (3 * math.sqrt(3) / 2) * x ** 2
+
+# Test cases
+print(hexagon_area(1))  # Should return 2.598076211353316
+print(hexagon_area(2))  # Should return 10.392304845413264
+print(hexagon_area(3))  # Should return 23.382685902179844
+
+Q5.Create a function that returns a base-2(binary) representation of a base-10(decimal)string number.
+To convert is simple:((2) means base-2 and(10) means base-10)010101001(200 = 1 + 8 + 32 +128.
+ANS:def decimal_to_binary(decimal_str):
+    # Convert the decimal string to an integer
+    decimal_number = int(decimal_str)
+    # Convert the integer to binary and remove the '0b' prefix
+    binary_representation = bin(decimal_number)[2:]
+    return binary_representation
+
+# Test cases
+print(decimal_to_binary('200'))  # '11001000'
+print(decimal_to_binary('10'))   # '1010'
+print(decimal_to_binary('255'))  # '11111111'

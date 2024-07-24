@@ -1,0 +1,109 @@
+Q1.Please write a program using generator to print the numbers which can be divisible by 5 and 7 between 0
+and n in comma separated form while n is input by console.
+ANS:Python program using a generator to print numbers divisible by both 5 and 7 between 0 and a user-provided value n in comma-separated form:
+def divisible_by_5_and_7(n):
+    """Generator to yield numbers divisible by 5 and 7 up to n."""
+    for i in range(n+1):
+        if i % 5 == 0 and i % 7 == 0:
+            yield i
+
+def main():
+    try:
+        n = int(input("Enter a number: "))
+        result = list(divisible_by_5_and_7(n))
+        print(", ".join(map(str, result)))
+    except ValueError:
+        print("Please enter a valid integer.")
+
+Enter a number: 100
+0, 35, 70
+
+Q2.Please write a program using generator to print the even numbers between 0 and n in comma separated
+form while n is input by console.
+ANS:Python program that uses a generator to print the even numbers between 0 and 
+𝑛
+n in a comma-separated form, where 
+𝑛
+n is provided as input from the console:
+def even_numbers(n):
+    """Generator to yield even numbers between 0 and n (inclusive)."""
+    for i in range(0, n+1):
+        if i % 2 == 0:
+            yield i
+
+def main():
+    n = int(input("Enter a number: "))
+    even_nums = even_numbers(n)
+    print(', '.join(map(str, even_nums)))
+
+if __name__ == "__main__":
+    main()
+
+Q3.Please write a program using list comprehesion to print the Fibonacci Sequence in comma separated form 
+with a given n input by console.
+ANS:Python program that uses list comprehension to generate the Fibonacci sequence up to 
+𝑛
+n terms and prints it in a comma-separated form, where 
+𝑛
+n is provided as input from the console:
+def fibonacci(n):
+    """Generate a list containing the Fibonacci sequence up to n terms."""
+    fib_seq = [0, 1]
+    [fib_seq.append(fib_seq[-1] + fib_seq[-2]) for _ in range(2, n)]
+    return fib_seq[:n]
+
+def main():
+    n = int(input("Enter the number of terms: "))
+    fib_seq = fibonacci(n)
+    print(', '.join(map(str, fib_seq)))
+
+if __name__ == "__main__":
+    main()
+
+Q4.Assuming that we have some email addresses in the "username@companyname.com"format,please write program
+to print the user name of a given email address.Both user names and company names are composed of letters only.
+ANS:def get_username(email):
+    """Extracts the username from an email address."""
+    # Split the email address at the '@' symbol
+    username = email.split('@')[0]
+    return username
+
+def main():
+    # Get email address input from the user
+    email = input("Enter the email address: ")
+    username = get_username(email)
+    print("Username:", username)
+
+if __name__ == "__main__":
+    main()
+
+Q5.Define a class named shape and its subclass square.The square class has an init function which takes a 
+length as argument.Both classes have a area function which can print area of the shape where Shape's area 
+is 0 by default.
+ANS:the implementation of the Shape class and its subclass Square with the required functionalities:
+class Shape:
+    """Base class for shapes."""
+    def __init__(self):
+        pass
+    
+    def area(self):
+        """Prints the area of the shape, which is 0 by default."""
+        print("Area: 0")
+
+class Square(Shape):
+    """Subclass representing a square."""
+    def __init__(self, length):
+        """Initializes the square with a given side length."""
+        self.length = length
+    
+    def area(self):
+        """Prints the area of the square."""
+        area = self.length ** 2
+        print(f"Area: {area}")
+
+# Example usage:
+shape = Shape()
+shape.area()  # Output: Area: 0
+
+square = Square(4)
+square.area()  # Output: Area: 16

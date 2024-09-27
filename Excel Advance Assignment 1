@@ -1,0 +1,22 @@
+Q1.What do you mean by cells in an excel sheet?
+Ans:A cell is a rectangular area formed by the intersection of a Column and a Row.Cell are identified by the Cell Name (or
+Reference, which is found by combining the Cloumn Letter with the Row Number.For examplethe cell in Column "C"in Row "3"wouldbe be cell C3.
+
+Q2.How can you restrict someone from coping a cell from your worksheet?
+Ans:Yes,itis posssible.In order to protect your worksheet from getting copied.you need to go into Menu bar > Review > Protect sheet > Password.
+By entering the password you can secure your worksheet from getting copied by others.
+
+Q3.How to move or copy the worksheet into another workbook?
+Ans:On the edit menu,click Sheet>Move or Copy Sheet.On the to book menu,click the workbook that you want to copy the sheet to.
+To create a new workbook that contains the moved sheet,click new book.In the before sheet box,click the sheet that 
+you want to insert the cpoied sheet before,or click move to end.
+
+Q4.Which key is used as a shortcut for opening a new window document?
+Ans:The Ctrl + N.Key pointsCtrl+Nis a shortcut key most often used to create a new document,Window,workbook,
+or another tyoe of file.Ctrl+N: Create a new file.
+
+Q5.What are the things that we can notice after opening the Excel interface?
+Ans:1.Formula Bar The Formula Bar is found just besidethe Formula Quick Menu..
+2.Statu
+Q6.When to use a relative cell reference in excel?
+Ans:
